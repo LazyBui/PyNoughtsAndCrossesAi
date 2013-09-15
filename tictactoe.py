@@ -67,6 +67,6 @@ while not exit:
 	ai.saveResults()
 
 	answer = None
-	while answer is None or answer not in ['y', 'Y', 'yes', 'Yes', 'quit', 'Quit', 'exit', 'Exit', 'n', 'N', 'no', 'No']:
-		answer = input('Exit [y/n]? ')
-		if answer in ['y', 'Y', 'yes', 'Yes', 'quit', 'Quit', 'exit', 'Exit']: exit = True
+	while answer is None or answer not in ['y', 'yes', 'quit', 'exit', 'n', 'no']:
+		answer = input('Exit [y/n]? ').lower()
+		if answer in ['y', 'yes', 'quit', 'exit']: exit = True
